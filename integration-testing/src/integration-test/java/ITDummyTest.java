@@ -1,6 +1,8 @@
+import static junit.framework.Assert.assertTrue;
+
 import org.junit.Test;
 
-import static junit.framework.Assert.assertTrue;
+import com.sparktale.sample.HelloWorld;
 
 /**
  * @author Petri Kainulainen
@@ -22,6 +24,8 @@ public class ITDummyTest {
     	{
     		
     	}
+    	
+    	HelloWorld.get1();
     	
     	assertTrue(true);
     }
