@@ -1,6 +1,6 @@
-import org.junit.Test;
-
 import static junit.framework.Assert.assertTrue;
+
+import org.junit.Test;
 
 /**
  * @author Petri Kainulainen

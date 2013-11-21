@@ -11,4 +11,18 @@ public class ITDummyTest {
     public void dummyTest() {
         assertTrue(true);
     }
+    
+    @Test
+    public void longTest2() {
+    	try
+    	{
+    		Thread.sleep(10000);
+    	}
+    	catch (Exception e)
+    	{
+    		
+    	}
+    	
+    	assertTrue(true);
+    }
 }
