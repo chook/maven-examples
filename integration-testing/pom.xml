@@ -30,6 +30,7 @@
             <properties>
                 <!-- Used to locate the profile specific configuration file. -->
                 <build.profile.id>integration-test</build.profile.id>
+                <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
                 <!-- Only integration tests are run. -->
                 <skip.integration.tests>false</skip.integration.tests>
                 <skip.unit.tests>true</skip.unit.tests>
