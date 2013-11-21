@@ -16,16 +16,19 @@ public class ITDummyTest {
     
     @Test
     public void longTest2() {
-    	try
+    	for (int i=0; i< 10; i++)
     	{
-    		Thread.sleep(10000);
+	    	try
+	    	{
+	    		Thread.sleep(10000);
+	    	}
+	    	catch (Exception e)
+	    	{
+	    		
+	    	}
+	    	
+	    	HelloWorld.get1();
     	}
-    	catch (Exception e)
-    	{
-    		
-    	}
-    	
-    	HelloWorld.get1();
     	
     	assertTrue(true);
     }
