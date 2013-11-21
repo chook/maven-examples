@@ -11,6 +11,8 @@ public class HelloWorld
 	{
 		System.out.println("Jenkins env:" + System.getenv("JOB_NAME"));
 		
+		System.out.println("Jenkins env:" + System.getenv());
+		
 		return 1;
 	}
 }
