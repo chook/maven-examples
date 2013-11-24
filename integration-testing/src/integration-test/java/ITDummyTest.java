@@ -26,10 +26,11 @@ public class ITDummyTest {
     
     @Test
     public void longTest2() {
+    	hw.boom();
     	
     	Random random = new Random();
     	
-    	for (int i=0; i< 10; i++)
+    	for (int i=0; i< 20; i++)
     	{
 	    	try
 	    	{
