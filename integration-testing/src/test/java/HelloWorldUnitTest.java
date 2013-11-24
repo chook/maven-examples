@@ -1,16 +1,25 @@
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertTrue;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import com.sparktale.sample.HelloWorld;
 
 public class HelloWorldUnitTest
 {
+	HelloWorld hw;
+	
+	@Before
+	public void init()
+	{
+		hw = new HelloWorld();
+	}
+	
 	@Test
 	public void testGet1()
 	{
-		assertEquals(1, HelloWorld.get1());
+		assertEquals(1, hw.get1());
 	}
 	
 	@Test
@@ -24,6 +33,7 @@ public class HelloWorldUnitTest
 		{
 			
 		}
-		assertTrue(HelloWorld.get1() > 0);
+		
+		assertTrue(hw.get1() > 0);
 	}
 }
