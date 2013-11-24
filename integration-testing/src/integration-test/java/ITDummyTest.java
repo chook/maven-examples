@@ -30,11 +30,11 @@ public class ITDummyTest {
     	
     	Random random = new Random();
     	
-    	for (int i=0; i < 50; i++)
+    	for (int i=0; i < 150; i++)
     	{
 	    	try
 	    	{
-	    		Thread.sleep(4000);
+	    		Thread.sleep(3000);
 	    	}
 	    	catch (Exception e)
 	    	{
