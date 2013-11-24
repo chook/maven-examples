@@ -1,5 +1,8 @@
 import static junit.framework.Assert.assertTrue;
 
+import java.util.Random;
+
+import org.junit.Before;
 import org.junit.Test;
 
 import com.sparktale.sample.HelloWorld;
@@ -9,6 +12,13 @@ import com.sparktale.sample.HelloWorld;
  */
 public class ITDummyTest {
 
+	HelloWorld hw;
+	
+	@Before
+	public void init() {
+		hw = new HelloWorld();
+	}
+	
     @Test
     public void dummyTest() {
         assertTrue(true);
@@ -16,6 +26,9 @@ public class ITDummyTest {
     
     @Test
     public void longTest2() {
+    	
+    	Random random = new Random();
+    	
     	for (int i=0; i< 10; i++)
     	{
 	    	try
@@ -27,7 +40,14 @@ public class ITDummyTest {
 	    		
 	    	}
 	    	
-	    	HelloWorld.get1();
+	    	if (random.nextBoolean())
+	    	{
+	    		hw.get1();
+	    	}
+	    	else
+	    	{
+	    		hw.boom();
+	    	}
     	}
     	
     	assertTrue(true);

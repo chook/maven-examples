@@ -2,17 +2,27 @@ package com.sparktale.sample;
 
 public class HelloWorld
 {
-	public static void main(String[] args)
+	public int get1()
 	{
-		get1();
+		return 1;
 	}
 	
-	public static int get1()
+	public int boom()
 	{
-		System.out.println("Jenkins env:" + System.getenv("JOB_NAME"));
+		int x = get1();
 		
-		System.out.println("Jenkins allenv:" + System.getenv());
+		try
+		{
+			if (x / (x-1) > 0)
+			{
+				return 0;
+			}
+		}
+		catch (Exception e)
+		{
+			// nothing
+		}
 		
-		return 1;
+		return x;
 	}
 }
