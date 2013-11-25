@@ -11,7 +11,8 @@ import com.sparktale.sample.HelloWorld;
  * @author Petri Kainulainen
  */
 public class ITDummyTest {
-
+	private static int nonce = 1;
+	
 	HelloWorld hw;
 	
 	@Before
