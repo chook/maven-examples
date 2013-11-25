@@ -30,7 +30,7 @@ public class ITDummyTest {
     	
     	Random random = new Random();
     	
-    	for (int i=0; i < 150; i++)
+    	for (int i=0; i < 101; i++)
     	{
 	    	try
 	    	{
