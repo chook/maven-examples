@@ -1,17 +1,17 @@
 import static junit.framework.Assert.assertTrue;
 
 import java.util.Random;
+import java.util.logging.Logger;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import com.sparktale.sample.HelloWorld;
 
-/**
- * @author Petri Kainulainen
- */
 public class ITDummyTest {
-	private static int nonce = 1;
+	private static int nonce = 2;
+	
+	private static Logger logger = Logger.getLogger(ITDummyTest.class.getName());
 	
 	HelloWorld hw;
 	
@@ -49,6 +49,11 @@ public class ITDummyTest {
 	    	else
 	    	{
 	    		hw.boom();
+	    	}
+	    	
+	    	if (random.nextBoolean())
+	    	{
+	    		logger.severe("Severe message " + random.nextDouble());
 	    	}
     	}
     	
