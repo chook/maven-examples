@@ -11,7 +11,7 @@ import com.sparktale.sample.HelloWorld;
 
 public class ITDummyTest
 {
-	private static int nonce = 2;
+	private static int nonce9 = 2;
 	
 	private static Logger logger = LoggerFactory.getLogger(ITDummyTest.class);
 	//	private static Logger logger = Logger.getLogger(ITDummyTest.class.getName());
@@ -47,9 +47,11 @@ public class ITDummyTest
 	
 	private void internalTest2(Random random)
 	{
+		System.out.println("it2");
+		
 		try
 		{
-			Thread.sleep(3000);
+			Thread.sleep(3002);
 		}
 		catch (Exception e)
 		{
