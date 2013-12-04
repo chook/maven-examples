@@ -20,7 +20,7 @@ public class HelloWorld
 		}
 		catch (Exception e)
 		{
-			// nothing
+			System.err.println(e.getMessage());
 		}
 		
 		return x;
