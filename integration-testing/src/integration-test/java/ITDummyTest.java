@@ -37,7 +37,7 @@ public class ITDummyTest
 		
 		Random random = new Random();
 		
-		for (int i = 0; i < 21; i++)
+		for (int i = 0; i < 46; i++)
 		{
 			internalTest2(random);
 		}
