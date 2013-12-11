@@ -2,7 +2,7 @@ package com.sparktale.sample;
 
 public class HelloWorld
 {
-	int nonce1 = 1;
+	int nonce2 = 1;
 	
 	public int get1()
 	{
