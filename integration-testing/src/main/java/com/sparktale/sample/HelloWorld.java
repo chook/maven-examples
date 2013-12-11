@@ -2,6 +2,8 @@ package com.sparktale.sample;
 
 public class HelloWorld
 {
+	int nonce1 = 1;
+	
 	public int get1()
 	{
 		return 1;
