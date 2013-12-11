@@ -1,4 +1,4 @@
-import static junit.framework.Assert.assertTrue;
+import junit.framework.Assert;
 
 import java.util.Random;
 
@@ -27,7 +27,7 @@ public class ITDummyTest
 	@Test
 	public void dummyTest()
 	{
-		assertTrue(true);
+		Assert.assertTrue(true);
 	}
 	
 	@Test
@@ -42,7 +42,7 @@ public class ITDummyTest
 			internalTest2(random);
 		}
 		
-		assertTrue(true);
+		Assert.assertTrue(true);
 	}
 	
 	private void internalTest2(Random random)
